@@ -17,8 +17,8 @@ function merge(left, right) {
 }
 
 function mergeSort(arr, low = 0, high = arr.length - 1) {
-    if (low >= high) {
-        return arr.slice(low, high + 1);
+    if (low === high) {
+        return [arr[low]];
     }
 
     const mid = Math.floor((low + high) / 2);
